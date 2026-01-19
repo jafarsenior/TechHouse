@@ -1,0 +1,150 @@
+/* Hero Section */
+.hero {
+  background-image: url("../images/blogbg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #000000;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Blog Posts */
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  gap: 30px;
+}
+.post{
+  max-width: 400px;
+  padding: 20px;
+
+}
+.post img {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.post h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.post p {
+  color: #333;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 5px 15px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.read-more:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+
+.blog-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+}
+
+.blog-top,
+.blog-bottom {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.blog-bottom {
+  flex-direction: row-reverse;
+}
+
+.blog-image img,
+.bottom-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.blog-content h3,
+.bottom-text h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.blog-content p,
+.bottom-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.blog-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.blog-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+/* RESPONSIVE */
+@media (max-width: 1208px) {
+  .hero {
+    margin: 200px 0;
+  }
+  .hero h2 {
+    font-size: 1rem;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .blog-top,
+  .blog-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
