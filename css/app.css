@@ -280,7 +280,7 @@ ul.devided > li:last-child {
 
 .hero {
     height: calc(
-        100vh -
+        700px -
             (
                 var(--top-header-size) + var(--mid-header-size) +
                     var(--bottom-header-size)
@@ -503,6 +503,8 @@ ul.devided > li:last-child {
 .product-card {
     background-color: var(--main-bg-color);
     transition: all 0.3s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 10px 10px;
 }
 
 .product-card:hover {
